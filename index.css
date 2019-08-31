@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #3d3d3d;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+
+}
+
+h1 {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 40px;
+    user-select: none;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes headerSpin {
+    0% {
+        transform: rotate(0deg) scaleX(1);
+        color: rgba(255, 0, 0);
+    }
+    50% {
+        transform: rotate(180deg) scaleX(0.8);
+        color: rgba(125, 125, 255);
+    }
+    100% {
+        transform: rotate(360deg) scaleX(1);
+        color: rgba(255, 0, 0);
+    }
+}
+
+.searchContainer {
+    width: 100vw;
+}
+
+.hideDisabledContainer {
+    width: fit-content;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideDisabledContainer p {
+    margin-right: 10px;
+}
+
+#hideDisabled {
+    cursor: pointer;
+}
+
+#search {
+    width: 250px;
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    margin-top: 20px;
+    width: 100vw;
+    height: fit-content;
+    overflow-x: auto;
+}
+
+.row {
+    margin: 0 auto;
+    width: fit-content;
+    max-width: 1200px;
+    height: fit-content;
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.rowDisabled p {
+    color: gray;
+}
+
+.row:nth-child(1) p {
+    color: aqua;
+}
+
+.row:last-child {
+    border-bottom: 0;
+}
+
+.row p {
+    width: 200px;
+    padding: 0 5px;
+    height: 100%;
+}
+
+.row p:nth-child(1) {
+    width: 600px;
+}
+
+.row p:nth-child(2) {
+    width: 200px;
+}
+
+.row p:nth-child(3) {
+    width: 150px;
+    overflow-x: hidden;
+}
+
+.row p:nth-child(4) {
+    width: 150px;
+}
+
+.row p:nth-child(5) {
+    width: 100px;
+}
