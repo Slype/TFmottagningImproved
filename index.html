@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+    <head>
+        <title>TF Mottagning</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <meta name="theme-color" content="#e00000">
+        <link rel="shortcut icon" type="image/png" href="logo.png">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 id="header">Uppdrag</h1>
+        <div class="searchContainer">
+            <input type="text" id="search" placeholder="Sök utmaningar..." oninput="updateRows()">
+            <div class="hideDisabledContainer">
+                <p>Göm avklarade uppdrag</p>
+                <input type="checkbox" id="hideDisabled" onclick="updateRows()">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row rowHeader">
+                <p>Beskrivning</p>
+                <p>Svårighetsgrad</p>
+                <p>Poäng</p>
+                <p>Rapportera till</p>
+                <p>Avklarad</p>
+            </div>
+            <!-- Examples -->
+            <div class="row rowDisabled">
+                <p>Få sitt F (eller miniräknare) signerad av Yunge Kutta och PostNord-Malin.</p>
+                <p>Omöjligt</p>
+                <p>10</p>
+                <p>Generalerna</p>
+                <p>SSA</p>
+            </div>
+            <div class="row">
+                <p>Gratta superphadder Phanny och Pontus på deras respektive födelsedagar</p>
+                <p>Sick</p>
+                <p>10</p>
+                <p>Pontus</p>
+                <p></p>
+            </div>
+            <div class="row">
+                <p>Offra dig mer på såpdoppbollen än General Morris gjorde förra året!</p>
+                <p>	AJ</p>
+                <p>5</p>
+                <p>General Morris</p>
+                <p></p>
+            </div>
+            <div class="row rowDisabled">
+                <p>Gör en finfin design åt Eivind</p>
+                <p>Math.sqrt(-1)</p>
+                <p>50</p>
+                <p>Eivind</p>
+                <p>RLM</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
